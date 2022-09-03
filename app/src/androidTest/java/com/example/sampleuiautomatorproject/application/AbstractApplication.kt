@@ -9,7 +9,7 @@ abstract class AbstractApplication(val packageName: String) {
 
     open fun open() {
         val intent = context.packageManager.getLaunchIntentForPackage(packageName)?.apply {
-            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
         }
         device.pressHome()
         context.startActivity(intent)
