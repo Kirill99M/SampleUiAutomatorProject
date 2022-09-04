@@ -1,5 +1,7 @@
 package com.example.sampleuiautomatorproject.application
 
+import android.bluetooth.BluetoothClass
+import android.content.Context
 import android.content.Intent
 import com.example.sampleuiautomatorproject.util.context
 import com.example.sampleuiautomatorproject.util.device
@@ -9,6 +11,7 @@ abstract class AbstractApplication(val packageName: String) {
 
     open fun open() {
         val intent = context.packageManager.getLaunchIntentForPackage(packageName)?.apply {
+
 
         }
         device.pressHome()

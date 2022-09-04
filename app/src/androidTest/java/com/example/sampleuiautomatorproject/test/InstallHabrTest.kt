@@ -16,6 +16,7 @@ class InstallHabrTest: AbstractApplicationTest<PlayMarket>(PlayMarket()) {
     @Test
     fun installHabr() = with(app) {
         open()
+        Thread.sleep(11111111)
         clickSearch()
         typeToSearch("Habrahabr")
         clickResult("Habr — сообщество IT-специалистов")

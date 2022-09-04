@@ -13,9 +13,5 @@ abstract class AbstractApplicationTest<T : AbstractApplication>(val app : T) {
         app.assertInstalled()
     }
 
-    @Before
-    fun clearCache() {
-        device.executeShellCommand("pm clear ${app.packageName}")
-        Log.d("Selector", "Cache clear")
-    }
+
 }
